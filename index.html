@@ -1,37 +1,149 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <title>用户管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link type="text/css" href="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/reset.css" rel="Stylesheet">
+    <link type="text/css" href="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/default.css" rel="Stylesheet">
+    <link rel="shortcut icon" href="http://127.0.0.1:32767/resources/images/favicon_play.ico">
+    
 
-You can use the [editor on GitHub](https://github.com/liulongtao123/liulongtao123.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+    <link href="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/previewfonts.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="http://127.0.0.1:32767/resources/images/favicon_play.ico">
+<script type="text/javascript">
+        PREVIEW_INFO = { fileName : '数据中台-原型设计-v1.0.2'}
+</script>
+<script type="text/javascript">
+        if (location.href.toString().indexOf('file://localhost/') == 0) {
+            location.href = location.href.toString().replace('file://localhost/', 'file:///');
+        }
+    </script>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <!--<link type="text/css" rel="Stylesheet" href="plugins/sitemap/styles/sitemap.css" />
+    <link type="text/css" rel="Stylesheet" href="plugins/page_notes/styles/page_notes.css" />
+    <link type="text/css" rel="Stylesheet" href="plugins/debug/styles/debug.css" />
+    <link type="text/css" rel="Stylesheet" href="plugins/handoff/styles/handoff.css" />
+    <link type="text/css" rel="Stylesheet" href="plugins/handoff/styles/codemirror.css" />-->
+<script type="text/javascript" async="" src="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/document.js"></script><script type="text/javascript" src="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/sitemap.js"></script><script type="text/javascript" src="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/page_notes.js"></script><script type="text/javascript" src="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/debug.js"></script><link type="text/css" rel="stylesheet" href="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/sitemap.css"><link type="text/css" rel="stylesheet" href="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/page_notes.css"><link type="text/css" rel="stylesheet" href="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/debug.css"><script src="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/prompt.js"></script></head>
+<body scroll="no" class="hashover" style="overflow: hidden;">
+    <div id="topPanel">
+        <div id="interfaceControlFrame" style="opacity: 1;">
+            <div id="interfaceControlFrameLeft">
+                <div id="interfaceControlFrameMinimizeContainer">
+                    <a title="Collapse" id="interfaceControlFrameMinimizeButton">
+                        <div id="minimizeArrow" class="minimizeButtonHover minimizeIcon"></div>
+                        <div id="minimizeX" class="minimizeButton minimizeIcon"></div>
+                    </a>
+                </div>
+                <div id="interfaceControlFrameCloseContainer">
+                    <a title="Close" id="interfaceControlFrameCloseButton">CLOSE</a>
+                </div>
 
-### Markdown
+                <div id="sitemapControlFrameContainer" title="Project Pages" class="selected">
+                    <div id="projectControlFrameHeaderContainer">
+                        <ul id="projectControlFrameHeader"><li id="sitemapHostBtn"><a pluginid="sitemapHost" title="Project Pages" class="selected">&nbsp;</a></li></ul>
+                    </div>
+                    
+                    <div id="interfacePageNameContainer">
+                        <div id="interfacePageNameButton" class="pageNameHeader">用户管理</div>
+                    </div>
+                </div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+                <div id="interfaceAdaptiveViewsContainer" title="Adaptive Views" style="display: none;">
+                    <div id="interfaceAdaptiveViewsIconButton">&nbsp;</div>
+                    <div id="interfaceAdaptiveViewsButton" class="adaptiveViewHeader"> (1604 x any)</div>
+                    <div id="adaptiveViewsDropdown" class="caret"></div>
+                </div>
+            </div>
+            
+            <div id="interfaceControlFrameContainer">
+                <div id="handoffControlFrameHeaderContainer">
+                    <ul id="handoffControlFrameHeader"></ul>
+                </div>
+                <div id="interfaceControlFrameLogoContainer">
+                    <div id="previewNotice" style="display: block;">
+                        Local Preview
+                    </div>
+                </div>
+            </div>
 
-# Header 1
-## Header 2
-### Header 3
+            <div id="interfaceControlFrameRight">
+                <div id="publishContainer">
+                    <a id="publishButton">Share Prototype</a>
+                </div>
+                
+                <div id="inspectControlFrameHeaderContainer">
+                    <ul id="inspectControlFrameHeader">
+                        <li id="overflowBtn">
+                            <a id="overflowMenuButton" title="View Options"></a>
+                        </li>
+                    <li id="pageNotesHostBtn"><a pluginid="pageNotesHost" title="Documentation"><span></span></a></li><li id="debugHostBtn"><a pluginid="debugHost" title="Console"><span></span></a></li></ul>
+                </div>
 
-- Bulleted
-- List
+                <div id="separatorContainer" class="hasLeft">
+                    <div class="separator"></div>
+                </div>
 
-1. Numbered
-2. List
+                <div id="overflowMadeWith" class="preview"><a href="https://www.axure.com/" id="axureLogo" target="_blank"></a></div>
 
-**Bold** and _Italic_ and `Code` text
+            </div>
 
-[Link](url) and ![Image](src)
-```
+        </div>
+    </div>
+    <div id="popupContainer">
+        <div id="interfaceAdaptiveViewsListContainer" style="display: none;"><div class="adaptiveViewOption" val="auto"><div class="adapViewRadioButton selectedRadioButton"><div class="selectedRadioButtonFill" style="display: block;"></div></div>Adaptive</div><div class="adaptiveViewOption currentAdaptiveView" val="default" data-dim="0x0"><div class="adapViewRadioButton"><div class="selectedRadioButtonFill" style="display: none;"></div></div> (any x any)</div></div>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+        
 
-### Jekyll Themes
+        <div id="accountLoginContainer">
+        </div>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/liulongtao123/liulongtao123.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+        <div id="overflowMenuContainer"><div id="showNotesOption" class="showOption" style="order: 3"><div class="overflowOptionCheckbox selected"></div>Show Note Markers</div>
+        <div id="showHotspotsOption" class="showOption" style="order: 1"><div class="overflowOptionCheckbox"></div>Show Hotspots</div><div id="interfaceScaleListContainer">
+        <div class="vpScaleOption" val="0"><div class="scaleRadioButton selectedRadioButton"><div class="selectedRadioButtonFill" style="display: block;"></div></div>Default Scale</div><div class="vpScaleOption" val="1"><div class="scaleRadioButton"><div class="selectedRadioButtonFill" style="display: none;"></div></div>Scale to Width</div><div class="vpScaleOption" val="2"><div class="scaleRadioButton"><div class="selectedRadioButtonFill" style="display: none;"></div></div>Scale to Fit</div></div></div>
+    </div>
+    <div id="outerContainer" style="height: 757px; width: 1824px;"><div id="sitemapHost" class="leftPanel" style="width: 220px;"><div id="sitemapHeader" '="" class="sitemapHeader"><div id="sitemapToolbar" class="sitemapToolbar"><div id="searchDiv"><span id="searchIcon" class="sitemapToolbarButton"></span><input id="searchBox" type="text" class="searchBoxHint"></div><div class="leftArrow sitemapToolbarButton"></div><div class="rightArrow sitemapToolbarButton"></div></div></div><div class="sitemapPluginNameHeader pluginNameHeader">数据中台-原型设计-v1.0.2</div><div id="sitemapTreeContainer"><ul class="sitemapTree" style="clear:both;"><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:19px"><a class="sitemapPageLink" nodeurl="版本更新记录.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">版本更新记录</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:19px"><a class="sitemapPageLink" nodeurl="系统登录.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">系统登录</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:19px"><a class="sitemapPageLink" nodeurl="修改密码.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">修改密码</span></a></div></div></li><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:9px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="元数据管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">元数据管理</span></a></div></div><ul><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:36px"><a class="sitemapPageLink" nodeurl="数据源管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">数据源管理</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:36px"><a class="sitemapPageLink" nodeurl="数据模型管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">数据模型管理</span></a></div></div></li><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:26px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="数据存储对象管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">数据存储对象管理</span></a></div></div><ul><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="mongodb_____.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">MongoDB 高级部分</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="hbase___.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">Hbase 高级</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="es_elasticsearch____.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">ES（ElasticSearch） 高级</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="hive_高级.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">Hive 高级</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="redis___.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">Redis 高级</span></a></div></div></li></ul></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:36px"><a class="sitemapPageLink" nodeurl="数据字典.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">数据字典</span></a></div></div></li></ul></li><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:9px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="api平台.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">API平台</span></a></div></div><ul><li class="sitemapNode sitemapLeafNode"><div class=""><div class="sitemapPageLinkContainer" style="margin-left:36px"><a class="sitemapPageLink" nodeurl="服务api列表（未完）.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">服务API列表（未完）</span></a></div></div></li><li class="sitemapNode sitemapExpandableNode"><div class=""><div class="sitemapPageLinkContainer" style="margin-left:26px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="数据api列表.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">数据API列表</span></a></div></div><ul><li class="sitemapNode sitemapLeafNode"><div class=""><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="api查看.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">API查看</span></a></div></div></li></ul></li><li class="sitemapNode sitemapExpandableNode"><div class=""><div class="sitemapPageLinkContainer" style="margin-left:26px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="个人中心（未完）.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">个人中心（未完）</span></a></div></div><ul><li class="sitemapNode sitemapLeafNode"><div class=""><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="我的数据api.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">我的数据API</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div class=""><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="我的服务api.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">我的服务API</span></a></div></div></li></ul></li><li class="sitemapNode sitemapExpandableNode"><div class=""><div class="sitemapPageLinkContainer" style="margin-left:26px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="api权限审核.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">API权限审核</span></a></div></div><ul><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="申请人查看.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">申请人查看</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="审批人查看.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">审批人查看</span></a></div></div></li></ul></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:36px"><a class="sitemapPageLink" nodeurl="数据资源目录.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">数据资源目录</span></a></div></div></li></ul></li><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:9px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="数据集成.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">数据集成</span></a></div></div><ul><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:26px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="文件采集任务.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">文件采集任务</span></a></div></div><ul><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="基本信息.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">基本信息</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="数据解析.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">数据解析</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="任务配置.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">任务配置</span></a></div></div></li></ul></li></ul></li><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:9px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="数据开发.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">数据开发</span></a></div></div><ul><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:26px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="任务管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">任务管理</span></a></div></div><ul><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:43px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="任务列表.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">任务列表</span></a></div></div><ul><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:60px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="数据同步任务新增.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">数据同步任务新增</span></a></div></div><ul><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:87px"><a class="sitemapPageLink" nodeurl="基本信息_1.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">基本信息</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:87px"><a class="sitemapPageLink" nodeurl="数据源选择.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">数据源选择</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:87px"><a class="sitemapPageLink" nodeurl="数据配置.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">数据配置</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:87px"><a class="sitemapPageLink" nodeurl="任务配置_1.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">任务配置</span></a></div></div></li></ul></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:70px"><a class="sitemapPageLink" nodeurl="脚本类任务.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">脚本类任务</span></a></div></div></li><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:60px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="spark__.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">spark任务</span></a></div></div><ul><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:87px"><a class="sitemapPageLink" nodeurl="基本信息_2.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">基本信息</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:87px"><a class="sitemapPageLink" nodeurl="参数配置.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">参数配置</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:87px"><a class="sitemapPageLink" nodeurl="任务配置_2.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">任务配置</span></a></div></div></li></ul></li></ul></li></ul></li><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:26px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="资源管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">资源管理</span></a></div></div><ul><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:43px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="资源组列表.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">资源组列表</span></a></div></div><ul><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:70px"><a class="sitemapPageLink" nodeurl="服务器列表.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">服务器列表</span></a></div></div></li></ul></li><li class="sitemapNode sitemapLeafNode"><div class=""><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="计算引擎.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">计算引擎</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:53px"><a class="sitemapPageLink" nodeurl="资源组（备份）.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">资源组（备份）</span></a></div></div></li></ul></li></ul></li><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:9px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="系统管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">系统管理</span></a></div></div><ul><li class="sitemapNode sitemapLeafNode"><div class="sitemapHighlight"><div class="sitemapPageLinkContainer" style="margin-left:36px"><a class="sitemapPageLink" nodeurl="用户管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">用户管理</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:36px"><a class="sitemapPageLink" nodeurl="组织架构管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">组织架构管理</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:36px"><a class="sitemapPageLink" nodeurl="岗位管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">岗位管理</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:36px"><a class="sitemapPageLink" nodeurl="菜单管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">菜单管理</span></a></div></div></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:36px"><a class="sitemapPageLink" nodeurl="功能权限管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">功能权限管理</span></a></div></div></li><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:26px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="业务配置管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">业务配置管理</span></a></div></div><ul><li class="sitemapNode sitemapExpandableNode"><div><div class="sitemapPageLinkContainer" style="margin-left:43px"><a class="sitemapPlusMinusLink"><span class="sitemapMinus"></span></a><a class="sitemapPageLink" nodeurl="应用管理.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">应用管理</span></a></div></div><ul><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:70px"><a class="sitemapPageLink" nodeurl="业务配置.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">业务配置</span></a></div></div></li></ul></li></ul></li></ul></li><li class="sitemapNode sitemapLeafNode"><div><div class="sitemapPageLinkContainer" style="margin-left:19px"><a class="sitemapPageLink" nodeurl="相关控件.html"><span class="sitemapPageIcon"></span><span class="sitemapPageName">相关控件</span></a></div></div></li></ul></div><div id="changePageInstructions" class="pageSwapInstructions">Use  <span class="backKeys"></span>  and  <span class="forwardKeys"></span>  keys<br>to move between pages</div></div>
+        <div id="clippingBounds" style="height: 757px; left: 220px; width: 1604px; opacity: 1;"><div id="notesOverlay">&nbsp;</div>
+            <div id="clippingBoundsScrollContainer"></div>
+        </div>
 
-### Support or Contact
+        <div id="mHideSidebar"></div>
+        <div id="lsplitbar" class="splitbar" style="left: 216px; display: block;"></div>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+        <div id="mainPanel" style="height: 757px; opacity: 1;">
+            <div id="mainPanelContainer" style="position: relative; width: 100%; height: 757px;" data-page-dimensions-type="auto" data-scale-n="0">
+                <div id="clipFrameScroll" style="position: relative; width: 100%; height: 757px; background-color: rgb(255, 255, 255);">
+                    <iframe id="mainFrame" name="mainFrame" src="about:blank" style="display: block; position: absolute; width: 100%; height: 757px;" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="rsplitbar" class="splitbar"></div>
+
+    <div id="pageNotesHost" class="rightPanel" style="display: none;"><div id="pageNotesHeader"><div id="pageNotesToolbar" style="height: 12px;"></div></div><div id="pageNotesScrollContainer"><div id="pageNotesContainer"><div id="pageNotesEmptyState" class="emptyStateContainer"><div class="emptyStateTitle">No notes for this page.</div><div class="emptyStateContent">Notes added in Axure RP will appear here.</div><div class="dottedDivider"></div></div><span id="pageNotesContent"></span></div></div></div><div id="debugHost" class="rightPanel" style="display: none;"><div id="debugHeader"><div id="debugToolbar"><div id="consoleTitle" class="pluginNameHeader">Console</div></div></div><div id="variablesContainer" style="max-height:300px; overflow-y:auto"><div id="variablesTitle" class="sectionTitle">Variables</div><a id="variablesClearLink" class="traceOption">Reset Variables</a><div id="variablesDiv"><div class="variableList"><div class="variableName">OnLoadVariable</div><div class="variableValue">(blank)</div></div><div class="variableList"><div class="variableName">newStorage</div><div class="variableValue">(blank)</div></div><div class="variableList"><div class="variableName">hiveserver</div><div class="variableValue">(blank)</div></div></div></div><div id="traceContainer"><div id="traceHeader"><span class="sectionTitle">Trace</span><a id="traceClear" class="traceOption" style="display: none;">Clear Trace</a><a id="traceToggle" class="traceOption" style="display: none;">Stop Trace</a></div></div><div id="debugScrollContainer"><div id="debugContainer"><div id="traceEmptyState"><div class="startInstructions">Click the button below to start recording interactions as you click through the prototype.</div><div id="traceStart" class="startButton">Start Trace</div></div><div id="traceDiv"></div></div></div></div></div>
+
+    <div id="maximizePanelContainer" class="maximizePanelContainer" style="display: none;">
+        <div id="maximizePanelOver">
+            <div id="maximizePanel" title="Expand" class="maximizePanelOver">
+                <div id="maximizeButton" class="maximizeButton maximizeIcon"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobileControlFrameContainer"></div>
+
+<!-- 9.0.0.3655 -->
+<script src="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/jquery-3.js"></script>
+<script src="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/jquery.js"></script>
+<script src="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/axutils.js"></script>
+<script src="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/messagecenter.js"></script>
+<script src="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/axplayer.js"></script>
+<script src="%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86_files/init.js"></script>
+
+
+
+
+</body><div id="translate-button" style="background-color: white; box-shadow: rgb(221, 221, 221) 0px 0px 2px 2px; display: none; top: 164px; left: 112px;"><img src="data:image/png;base64,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"></div></html>
